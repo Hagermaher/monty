@@ -25,16 +25,16 @@ int main(int argc, char *argv[])
  * @m: Numbe
  * Return: pointer
  */
-stack_t *cn(int m)
+stack_t *cn(int n)
 {
 	stack_t *node;
 
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
-		err(4);
+		er(4);
 	node->next = NULL;
 	node->prev = NULL;
-	node->m = m;
+	node->n = n;
 	return (node);
 }
 
