@@ -7,41 +7,41 @@
  * @ln: line number
  * Return: void
  */
-void ff(char *opc, char *val, int ln, int format)
+void find_func(char *opc, char *val, int ln, int format)
 {
 	int w;
 	int fl;
 
 	instruction_t func_list[] = {
 		{"push", ats},
-		{"pall", ps},
-		{"pint", pt},
-		{"pop", pop_top},
-		{"nop", nop},
+		{"pall", prs},
+		{"pint", prt},
+		{"pop", pt},
+		{"nop", np},
 		{"swap", sn},
 		{"add", an},
 		{"sub", sun},
 		{"div", dn},
 		{"mul", muln},
-		{"mod", mn},
+		{"mod", modn},
 		{"pchar", pc},
-		{"pstr", pstr},
-		{"rotl", rotl},
-		{"rotr", rotr},
+		{"pstr", ps},
+		{"rotl", rl},
+		{"rotr", rr},
 		{NULL, NULL}
 	};
 
 	if (opc[0] == '#')
 		return;
 
-	for (fl = 1, w = 0; func_list[i].opc != NULL; w++)
+	for (fl = 1, w = 0; func_list[w].op != NULL; w++)
 	{
-		if (strcmp(opcode, func_list[i].opcode) == 0)
+		if (strcmp(opc, func_list[w].op) == 0)
 		{
-			call_fun(func_list[i].f, opcode, value, ln, format);
-			flag = 0;
+			cf(func_list[w].f, opc, val, ln, format);
+			fl = 0;
 		}
 	}
-	if (flag == 1)
-		err(3, ln, opcode);
+	if (fl == 1)
+		er(3, ln, opc);
 }

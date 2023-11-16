@@ -26,14 +26,14 @@ typedef struct stack_s
 /**
  * struct instruction_s - opcode
  * @op: op
- * @fun: function
+ * @f: function
  *
  * Description: opcode
  */
 typedef struct instruction_s
 {
         char *op;
-        void (*fun)(stack_t **st, unsigned int line_number);
+        void (*f)(stack_t **st, unsigned int line_number);
 } instruction_t;
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
