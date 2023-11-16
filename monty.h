@@ -12,15 +12,15 @@
 /**
  * struct stack_s - doubly linked
  * @w: inte
- * @p: points
- * @n: points
+ * @prev: points
+ * @next: points
  * Description: doubly linked list
  */
 typedef struct stack_s
 {
         int w;
-        struct stack_s *p;
-        struct stack_s *n;
+        struct stack_s *prev;
+        struct stack_s *next;
 } stack_t;
 
 /**
@@ -33,21 +33,21 @@ typedef struct stack_s
 typedef struct instruction_s
 {
         char *op;
-        void (*fun)(stack_t **st, unsigned int lm);
+        void (*fun)(stack_t **st, unsigned int line_number);
 } instruction_t;
 
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 
-void open_file(char *fna);
-int pal(char *buf, int lm, int f);
+void opf(char *fna);
+int pal(char *buf, int line_number, int f);
 void rf(FILE *);
 int lc(FILE *);
 void ff(char *, char *, int, int);
 
 
-stack_t *create_node(int m);
+stack_t *cn(int m);
 void fn(void);
 void prs(stack_t **, unsigned int);
 void ats(stack_t **, unsigned int);
