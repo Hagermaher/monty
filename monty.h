@@ -52,27 +52,19 @@ void fn(void);
 void prs(stack_t **, unsigned int);
 void ats(stack_t **, unsigned int);
 void atq(stack_t **, unsigned int);
-
 void cf(op_func, char *, char *, int, int);
-
 void prt(stack_t **, unsigned int);
 void pt(stack_t **, unsigned int);
 void np(stack_t **, unsigned int);
 void sn(stack_t **, unsigned int);
-
-
 void an(stack_t **, unsigned int);
 void sun(stack_t **, unsigned int);
 void dn(stack_t **, unsigned int);
 void muln(stack_t **, unsigned int);
 void modn(stack_t **, unsigned int);
-
-
 void pc(stack_t **, unsigned int);
 void ps(stack_t **, unsigned int);
 void rl(stack_t **, unsigned int);
-
-
 void er(int ec, ...);
 void me(int ec, ...);
 void se(int ec, ...);
