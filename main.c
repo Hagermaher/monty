@@ -1,5 +1,4 @@
 #include "monty.h"
-stack_t *head = NULL;
 
 /**
  * main - entry point
@@ -10,6 +9,8 @@ stack_t *head = NULL;
 
 int main(int argc, char *argv[])
 {
+	stack_t *head = NULL;
+
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 
 /**
  * cn - Create.
- * @m: Numbe
+ * @n: Numbe
  * Return: pointer
  */
 stack_t *cn(int n)

@@ -7,7 +7,7 @@
  * @ln: line number
  * Return: void
  */
-void find_func(char *opc, char *val, int ln, int format)
+void ff(char *opc, char *val, int ln, int format)
 {
 	int w;
 	int fl;
