@@ -7,7 +7,7 @@
  * @ln: line number
  * Return: void
  */
-void find_func(char *opc, char *val, int ln, int format)
+void ff(char *opc, char *val, int ln, int format)
 {
 	int w;
 	int fl;
@@ -15,9 +15,9 @@ void find_func(char *opc, char *val, int ln, int format)
 	instruction_t func_list[] = {
 		{"push", ats},
 		{"pall", ps},
-		{"pint", prt},
-		{"pop", pt},
-		{"nop", np},
+		{"pint", pt},
+		{"pop", pop_top},
+		{"nop", nop},
 		{"swap", sn},
 		{"add", an},
 		{"sub", sn},
