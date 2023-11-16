@@ -47,7 +47,7 @@ int lc(FILE *);
 void ff(char *, char *, int, int);
 
 
-stack_t *create_node(int m);
+stack_t *cn(int m);
 void fn(void);
 void prs(stack_t **, unsigned int);
 void ats(stack_t **, unsigned int);
