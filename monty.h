@@ -11,14 +11,14 @@
 
 /**
  * struct stack_s - doubly linked
- * @w: inte
+ * @n: inte
  * @prev: points
  * @next: points
  * Description: doubly linked list
  */
 typedef struct stack_s
 {
-        int w;
+        int n;
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;

@@ -23,7 +23,7 @@ void cf(op_func func, char *opi, char *val, int ln, int format)
 		}
 		if (val == NULL)
 			er(5, ln);
-		for (w = 0; val[i] != '\0'; w++)
+		for (w = 0; val[w] != '\0'; w++)
 		{
 			if (isdigit(val[w]) == 0)
 				er(5, ln);
