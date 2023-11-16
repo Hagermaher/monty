@@ -3,16 +3,16 @@
 /**
  * pc - Prin.
  * @s: Pointee stack.
- * @line_number: Intergede.
+ * @ln: Intergede.
  */
-void pc(stack_t **s, unsigned int line_number)
+void pc(stack_t **s, unsigned int ln)
 {
 	int as;
 
 	if (s == NULL || *s == NULL)
-		se(11, line_number);
+		se(11, ln);
 	as = (*s)->n;
 	if (as < 0 || as > 127)
-		se(10, line_number);
+		se(10, ln);
 	printf("%c\n", as);
 }

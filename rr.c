@@ -3,10 +3,10 @@
 /**
  * rr - Rotat the top.
  * @s: P
- * @ln: Interg
+ * @l: Interg
  */
 
-void rr(stack_t **s, __attribute__((unused))unsigned int ln)
+void rr(stack_t **s, __attribute__((unused))unsigned int l)
 {
 	stack_t *t;
 

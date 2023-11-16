@@ -3,9 +3,9 @@
 /**
  * rl - Rotatetom.
  * @s: Pointestack.
- * @ln: Intergopcode.
+ * @l: Intergopcode.
  */
-void rl(stack_t **s, __attribute__((unused))unsigned int ln)
+void rl(stack_t **s, __attribute__((unused))unsigned int l)
 {
 	stack_t *t;
 

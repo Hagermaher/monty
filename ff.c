@@ -20,7 +20,7 @@ void ff(char *opc, char *val, int ln, int format)
 		{"nop", nop},
 		{"swap", sn},
 		{"add", an},
-		{"sub", sn},
+		{"sub", sun},
 		{"div", dn},
 		{"mul", muln},
 		{"mod", mn},

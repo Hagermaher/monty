@@ -3,9 +3,9 @@
 /**
  * ps - d.
  * @s: Pointeack.
- * @ln: Intergepcode.
+ * @l: Intergepcode.
  */
-void ps(stack_t **s, __attribute__((unused))unsigned int ln)
+void ps(stack_t **s, __attribute__((unused))unsigned int l)
 {
 	int as;
 	stack_t *t;

@@ -1,22 +1,20 @@
 #include "monty.h"
 
-
 /**
- * modn - Addsk.
- * @s: Pointetack.
- * @ln: Intergepcode.
+ * dn - Addtack.
+ * @s: Pointestack.
+ * @ln: Intergee.
  */
-
-void modn(stack_t **s, unsigned int ln)
+void dn(stack_t **s, unsigned int ln)
 {
 	int su;
 
 	if (s == NULL || *s == NULL || (*s)->next == NULL)
-		me(8, ln, "mod");
+		me(8, ln, "div");
 	if ((*s)->n == 0)
 		me(9, ln);
 	(*s) = (*s)->next;
-	su = (*s)->n % (*s)->prev->n;
+	su = (*s)->n / (*s)->prev->n;
 	(*s)->n = su;
 	free((*s)->prev);
 	(*s)->prev = NULL;

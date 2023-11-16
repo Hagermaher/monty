@@ -62,7 +62,7 @@ void sn(stack_t **, unsigned int);
 
 
 void an(stack_t **, unsigned int);
-void sn(stack_t **, unsigned int);
+void sun(stack_t **, unsigned int);
 void dn(stack_t **, unsigned int);
 void muln(stack_t **, unsigned int);
 void modn(stack_t **, unsigned int);
