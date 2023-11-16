@@ -1,5 +1,5 @@
 #include "monty.h"
-stack_t *head = NULL;
+
 /**
  * main - entry point
  * @argc: argument
@@ -43,6 +43,7 @@ stack_t *cn(int n)
  */
 void fn(void)
 {
+	stack_t *head = NULL;
 	stack_t *tmp;
 
 	if (head == NULL)
@@ -64,6 +65,7 @@ void fn(void)
  */
 void atq(stack_t **newnode, __attribute__((unused))unsigned int ln)
 {
+	stack_t *head = NULL;
 	stack_t *tmp;
 
 	if (newnode == NULL || *newnode == NULL)
