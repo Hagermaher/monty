@@ -38,15 +38,11 @@ typedef struct instruction_s
 
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
-
-
 void opf(char *fna);
 int pal(char *buf, int line_number, int f);
 void rf(FILE *);
 int lc(FILE *);
 void ff(char *, char *, int, int);
-
-
 stack_t *cn(int m);
 void fn(void);
 void prs(stack_t **, unsigned int);
