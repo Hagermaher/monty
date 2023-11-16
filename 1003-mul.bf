@@ -7,7 +7,7 @@ convert atoi
  >----- ---
  <<-
 ]
-muply two integers
+multiply two integers
 >[
  >[>+>+<<-]
  >[<+>-]
@@ -30,4 +30,4 @@ convert itoa
 ]
 print with newline
 >>[.<<]<[<<]>>.
->>,. 
+>>,.  
