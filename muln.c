@@ -6,7 +6,7 @@
  * @ln: Interge.
  */
 
-void muln(stack_t **stack, unsigned int ln)
+void muln(stack_t **s, unsigned int ln)
 {
 	int su;
 
