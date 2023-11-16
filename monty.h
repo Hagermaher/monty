@@ -40,7 +40,7 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 
-void open_file(char *fna);
+void opf(char *fna);
 int pal(char *buf, int line_number, int f);
 void rf(FILE *);
 int lc(FILE *);
